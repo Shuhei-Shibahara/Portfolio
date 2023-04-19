@@ -158,9 +158,20 @@ header.p-section {
 }
 
 .col-2 img{
-  height: 70px;
+  height: 100px;
   width: 220px;
   object-fit: fill;
+}
+
+
+.usta {
+  height: 70px;
+  width: 100px
+}
+
+.nht img{
+  height: 50px;
+  margin-top: 24px;
 }
 
 .edu-emp {
