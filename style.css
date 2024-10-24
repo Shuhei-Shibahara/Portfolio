@@ -171,7 +171,7 @@ header.p-section {
 
 .nht img{
   height: 50px;
-  margin-top: 24px;
+
 }
 
 .edu-emp {
@@ -213,4 +213,59 @@ header.p-section {
 
 .recomendationsHeading {
   font-size: 20px;
+}
+
+/* Set a uniform size and aspect ratio for the card image containers */
+.background-image {
+  position: relative;
+  /* Enable absolute positioning of the child img */
+  width: 100%;
+  /* Full width of the column */
+  padding-top: 100%;
+  /* 1:1 Aspect Ratio (square) */
+  overflow: hidden;
+  /* Hide overflow if necessary */
+}
+
+.background-image img {
+  position: absolute;
+  /* Position the image absolutely */
+  top: 50%;
+  /* Center the image vertically */
+  left: 50%;
+  /* Center the image horizontally */
+  width: auto;
+  /* Keep the width auto */
+  height: 100%;
+  /* Set the height to fill the container */
+  transform: translate(-50%, -50%);
+  /* Center the image */
+}
+
+/* Adjust image containers for mobile */
+@media (max-width: 768px) {
+  .background-image {
+    padding-top: 75%;
+    /* Adjust height for mobile (e.g., 75% for a rectangular aspect ratio) */
+  }
+}
+
+.profile1 {
+  width: 200px;
+  /* Set a default width */
+  height: 200px;
+  /* Set a default height */
+  border-radius: 50%;
+  /* Make the image circular */
+  object-fit: cover;
+  /* Ensure the image covers the entire area */
+  max-width: 100%;
+  /* Ensure it doesn't overflow the container */
+}
+
+.company-img {
+    width: 100%; /* Make the image responsive */
+    max-width: 150px; /* Adjust the maximum width */
+    height: 100px; /* Set a consistent height */
+    object-fit: contain; /* Maintain aspect ratio without distortion */
 }
